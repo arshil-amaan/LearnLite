@@ -1,14 +1,14 @@
 {
-  "name": "class1auth",
+  "name": "learn_lite_backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "EdTech Mini project KNIT",
   "main": "index.js",
   "scripts": {
-    "run": "node index.js",
+    "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["LearnLite"],
+  "author": "arshil",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
