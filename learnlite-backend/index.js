@@ -4,7 +4,7 @@ const cors = require('cors');
 
 app.use(cors({
     optionsSuccessStatus : 200 ,
-    origin : ["http://localhost:3000", "https://learnlite.netlify.app/"],
+    origin : ["http://localhost:3000", "https://learn-lite.netlify.app/"],
     credentials : true ,
 }))
 
