@@ -1,0 +1,64 @@
+.sec {
+  background-color: rgb(255 255 255);
+  padding: 3rem;
+}
+
+.heading {
+  font-weight: 700;
+  margin-bottom: 1.5rem
+  ;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem
+  ;
+}
+
+@media (min-width: 640px) {
+  .main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.my-input {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+}
+
+.msg-area {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.my-textarea {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  resize: vertical;
+}
+
+.msg-btn {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.my-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.my-button:hover {
+  background-color: #0056b3;
+}

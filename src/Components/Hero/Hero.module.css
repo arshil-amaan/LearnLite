@@ -1,0 +1,73 @@
+.land-section {
+    position: relative;
+    display: flex;
+    height: calc(100vh - 84px);
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row;
+}
+
+.land-section::before {
+    content: "";
+    background-image: url('../../images/landingBack.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+.land-section > div {
+    z-index: 1;
+}
+.rightImg > img{
+    width: 40vw;
+}
+
+.sailge {
+    position: relative;
+    color: #ffffff;
+    font-size: 14rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.heading {
+    font-size: 3rem
+        /* 48px */
+    ;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    background-color: rgb(59 130 246);
+    border: none;
+    color: rgb(255 255 255);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    padding-left: 2rem;
+    padding-right: 2rem
+        /* 32px */
+    ;
+    padding-top: 1rem
+        /* 16px */
+    ;
+    padding-bottom: 1rem
+        /* 16px */
+    ;
+    border-radius: 9999px;
+    box-shadow: 6px 6px 8px rgba(8, 8, 8, 0.3);
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+    background-image: linear-gradient(to left, #432db0, #6a4aa3);
+}

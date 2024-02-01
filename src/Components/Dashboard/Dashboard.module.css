@@ -1,0 +1,176 @@
+h1 {
+    text-align: center;
+    font-weight: 700 !important;
+    font-size: 30px !important;
+    margin: 20px 0 !important;
+}
+
+.book {
+    position: relative;
+    border-radius: 10px;
+    width: 220px;
+    height: 310px;
+    /* background-color: aliceblue; */
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+}
+
+.cpp-book img,
+.python-book img,
+.html-book img,
+.mysql-book img,
+.java-book img {
+    position: absolute;
+    opacity: 0.2;
+    width: 15vw;
+}
+
+.java-cover {
+    position: absolute;
+    z-index: 1;
+    background: url('../../images/java_cover.jpg') no-repeat;
+    background-size: cover;
+}
+
+.cpp-cover {
+    position: absolute;
+    z-index: 1;
+    background: url('../../images/cpp_cover.jpg') no-repeat;
+    background-size: cover;
+}
+
+.python-cover {
+    position: absolute;
+    z-index: 1;
+    background: url('../../images/python_cover.jpg') no-repeat;
+    background-size: cover;
+}
+
+.html-cover {
+    position: absolute;
+    z-index: 1;
+    background: url('../../images/html_cover.jpg') no-repeat;
+    background-size: cover;
+}
+
+.mysql-cover {
+    position: absolute;
+    z-index: 1;
+    background: url('../../images/mysql_cover.jpg') no-repeat;
+    background-size: cover;
+}
+
+.book p {
+    padding-left: 55px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.book-btn {
+    margin-top: 60px;
+    text-align: right;
+    display: flex;
+    flex-flow: column;
+}
+
+.book-btn button {
+    margin-right: 20px;
+    margin-bottom: 15px;
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #00589d;
+}
+
+.book-btn button::before {
+    content: '';
+    width: 0;
+    height: 400%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.book-btn button:hover::before {
+    width: 90%;
+}
+
+.book-btn button:hover {
+    color: #111;
+}
+
+
+.cover {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.book:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-80deg);
+}
+
+p {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.courses-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}

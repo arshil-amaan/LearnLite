@@ -1,0 +1,33 @@
+.sec{
+    background-color: rgb(59 130 246);
+    padding-top: 1.5rem/* 24px */;
+    padding-bottom: 1.5rem/* 24px */;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list {
+    display: flex;
+    color: white;
+}
+
+.list-item {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    list-style: none;
+}
+
+.txt {
+    color: rgb(255 255 255);
+}
+
+.footer-icon:hover{
+    cursor:pointer;
+}
